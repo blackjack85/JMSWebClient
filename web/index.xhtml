@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>JMS Message Producer</title>
+    </h:head>
+
+
+    <h:body>
+        <h1>JSF 2.0 h:outputText Example</h1>
+        <ol>
+            <li>#{User.text}</li>
+
+            <li><h:outputText value="#{User.text}" /></li>
+
+            <li><h:outputText value="#{User.text}" styleClass="abc" /></li>
+
+            <li><h:outputText value="#{User.htmlInput}" /></li>
+
+
+            <li><h:outputText value="#{User.htmlInput}" escape="false" /></li>
+        </ol>
+
+
+        <!-- Using a method -->
+        #{User.salute()}
+        <br/>
+        <h:outputText value="#{User.salute()}"/>
+        <br/>
+        <!-- Using a method from an injected bean-->
+        #{User.admin.doSomething()} 
+
+    
+        #{Consumer.start()}
+        <br/>
+        #{Consumer.text}
+
+    </h:body>
+
+
+</html>
+
