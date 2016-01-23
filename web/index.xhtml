@@ -34,7 +34,8 @@
     
         #{Consumer.start()}
         <br/>
-        #{Consumer.text}
+        <h:outputText value="#{Consumer.replace(Consumer.msgFullText,'\\n','&lt;br/&gt;')}" escape="false" />
+       
 
     </h:body>
 
